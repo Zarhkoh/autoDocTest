@@ -40,7 +40,7 @@ jobs:
 
       - name: "Install npm JSDoc dependencies"
         run: |
-          npm install -g jsdoc
+          npm install jsdoc
 
 
       - name: "Build Sphinx Doc"
