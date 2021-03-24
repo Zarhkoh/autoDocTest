@@ -4,11 +4,17 @@ const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 
-// PARTIE METIER DE LA CONNEXION AVEC UN UTILISATEUR
-// ON COMPARE LES MOTS DE PASSE
-// UN TOKEN EST CREE
+/**
+ *
+ * /login:
+ *
+ * @param {String} user_email: email de l'utilisateur
+ * @param {String} user_pwd: mot de passe de l'utilisateur
+ * @throws {Exception} email/mdp incorrect
+ * @returns {Object} Code 200: login has been established successfully
+ */
 module.exports.login = (body) => {
-    return new Promise(async (resolve, reject) => {
+    return new Promise(async(resolve, reject) => {
         try {
             const {
                 email,
@@ -36,7 +42,7 @@ module.exports.login = (body) => {
                     }, CONFIG.token_status, {
                         expiresIn: CONFIG.token_expire
                     });
-                    
+
                     return resolve({
                         status: 200,
                         token: newToken
@@ -66,7 +72,7 @@ module.exports.login = (body) => {
 // VERIFICATION QUE L'EMAIL N'EST PAS DEJA UTILISE
 // LE MOT DE PASSE EST CRYPTE A LA CREATION DU COMPTE
 module.exports.register = (body) => {
-    return new Promise(async (resolve, reject) => {
+    return new Promise(async(resolve, reject) => {
         try {
             const {
                 nom,
@@ -109,7 +115,7 @@ module.exports.register = (body) => {
 };
 
 module.exports.findUserByEmail = (body) => {
-    return new Promise(async (resolve, reject) => {
+    return new Promise(async(resolve, reject) => {
         try {
             const {
                 email
