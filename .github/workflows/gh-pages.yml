@@ -38,7 +38,7 @@ jobs:
           pip3 install sphinx-rtd-theme
           pip3 install sphinx-js
 
-      - name: "Install npm JSDoc dependencies"
+      - name: "Install npm dependencies"
         run: |
           npm install jsdoc
 
