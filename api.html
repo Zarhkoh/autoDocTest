@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Contribution &mdash; Documentation Documentation Automatique Test 1.0</title>
+  <title>Liste des requetes de l’API &mdash; Documentation Documentation Automatique Test 1.0</title>
   
 
   
@@ -39,8 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="next" title="RGPD" href="rgpd.html" />
-    <link rel="prev" title="FAQ" href="faq.html" /> 
+    <link rel="prev" title="Contactez-nous" href="contact.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,13 +89,10 @@
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutoriels.html">tutoriel pas à pas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Contribution</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#comment-contribuer-au-projet">Comment contribuer au projet</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rgpd.html">RGPD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contactez-nous</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Liste des requetes de l’API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Liste des requetes de l’API</a></li>
 </ul>
 
             
@@ -145,13 +141,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Contribution</li>
+      <li>Liste des requetes de l’API</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/contribute.md.txt" rel="nofollow"> Afficher la source de la page</a>
+            <a href="_sources/api.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -164,15 +160,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="contribution">
-<h1>Contribution<a class="headerlink" href="#contribution" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="comment-contribuer-au-projet">
-<h2>Comment contribuer au projet<a class="headerlink" href="#comment-contribuer-au-projet" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Notre projet vous interesse et vous souhaitez y participer!?
-Il suffit de cloner le projet, de créer une branche et d”y effectuer vos modifications.
-Dès que votre nouvelle branche sera pushé, notre ci se déclenchera pour effectuer des verifications de conformité
-avant que votre travail ne soit approuvé.</p>
-</div>
+  <div class="section" id="liste-des-requetes-de-l-api">
+<h1>Liste des requetes de l’API<a class="headerlink" href="#liste-des-requetes-de-l-api" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="js function">
+<dt id="login">
+<code class="sig-name descname"><span class="pre">login</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">user_email:</span></em>, <em class="sig-param"><span class="pre">user_pwd:</span></em><span class="sig-paren">)</span><a class="headerlink" href="#login" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>/login:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_email:</strong> (<em>String</em>) – email de l’utilisateur</p></li>
+<li><p><strong>user_pwd:</strong> (<em>String</em>) – mot de passe de l’utilisateur</p></li>
+</ul>
+</dd>
+<dt class="field-even">Déclenche</dt>
+<dd class="field-even"><p><strong>Exception</strong> – email/mdp incorrect</p>
+</dd>
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p><strong>Object</strong> – Code 200: login has been established successfully</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 
 
@@ -181,8 +190,7 @@ avant que votre travail ne soit approuvé.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="rgpd.html" class="btn btn-neutral float-right" title="RGPD" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="faq.html" class="btn btn-neutral float-left" title="FAQ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="contact.html" class="btn btn-neutral float-left" title="Contactez-nous" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
 
   <hr/>
