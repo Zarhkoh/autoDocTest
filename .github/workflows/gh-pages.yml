@@ -45,7 +45,7 @@ jobs:
 
       - name: "Install npm dependencies"
         run: |
-          npm install
+          npm install jsdoc
 
 
       - name: "Build Sphinx Doc"
