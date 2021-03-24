@@ -51,15 +51,3 @@ rendra cet objet:
   nested: { baz: 'I am markdown!' }
 }
 ```
-
-## API
-Ce module exporte une seule fonction synchrone, `dataDirectory`, qui renvoie
-un Objet.
-
-### `dataDirectory(directory, [options])`
-
-- `directory` String (required) - Full path to the directory to read.
-- `options` Object
-- `extensions` Array - A case-insensitive array of filenames to load. Defaults to `['.json', '.md', '.markdown', '.yaml', '.yml']`
-- `ignorePatterns` Array - Filename patterns to ignore. Every value in the array must be a regular expression. Defaults to `[/README\.md$/i]`. To include `README.md` files in your data object, specify an empty array: `[]`.
-- `preprocess` Function - A function that can be used to modify each loaded file's content before it's added to the data object. Default is a no-op function that return the unmodified content: `(content) => { return content }`

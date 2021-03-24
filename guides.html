@@ -90,10 +90,6 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#api">API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#datadirectory-directory-options"><code class="docutils literal notranslate"><span class="pre">dataDirectory(directory,</span> <span class="pre">[options])</span></code></a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutoriels.html">tutoriel pas à pas</a></li>
@@ -213,21 +209,6 @@ I am markdown!
   <span class="nx">nested</span><span class="o">:</span> <span class="p">{</span> <span class="nx">baz</span><span class="o">:</span> <span class="s1">&#39;I am markdown!&#39;</span> <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-</div>
-</div>
-<div class="section" id="api">
-<h2>API<a class="headerlink" href="#api" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Ce module exporte une seule fonction synchrone, <code class="docutils literal notranslate"><span class="pre">dataDirectory</span></code>, qui renvoie
-un Objet.</p>
-<div class="section" id="datadirectory-directory-options">
-<h3><code class="docutils literal notranslate"><span class="pre">dataDirectory(directory,</span> <span class="pre">[options])</span></code><a class="headerlink" href="#datadirectory-directory-options" title="Lien permanent vers ce titre">¶</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">directory</span></code> String (required) - Full path to the directory to read.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">options</span></code> Object</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">extensions</span></code> Array - A case-insensitive array of filenames to load. Defaults to <code class="docutils literal notranslate"><span class="pre">['.json',</span> <span class="pre">'.md',</span> <span class="pre">'.markdown',</span> <span class="pre">'.yaml',</span> <span class="pre">'.yml']</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ignorePatterns</span></code> Array - Filename patterns to ignore. Every value in the array must be a regular expression. Defaults to <code class="docutils literal notranslate"><span class="pre">[/README\.md$/i]</span></code>. To include <code class="docutils literal notranslate"><span class="pre">README.md</span></code> files in your data object, specify an empty array: <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">preprocess</span></code> Function - A function that can be used to modify each loaded file”s content before it”s added to the data object. Default is a no-op function that return the unmodified content: <code class="docutils literal notranslate"><span class="pre">(content)</span> <span class="pre">=&gt;</span> <span class="pre">{</span> <span class="pre">return</span> <span class="pre">content</span> <span class="pre">}</span></code></p></li>
-</ul>
 </div>
 </div>
 </div>
