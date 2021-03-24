@@ -69,4 +69,3 @@ html_static_path = ['_static']
 
 # JS files path
 js_source_path = '../../src/services'
-jsdoc_config_path = '../../src/config/swagger.config.js'
